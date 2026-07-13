@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
     private GeolocationPermissions.Callback geoCallback;
     private String geoOrigin;
 
-    String mainURL = "https://github.com/Jipok";
+    String mainURL = "file:///android_asset/index.html";
     boolean requireDoubleBackToExit = true;
     boolean allowSubdomains = true;
 
