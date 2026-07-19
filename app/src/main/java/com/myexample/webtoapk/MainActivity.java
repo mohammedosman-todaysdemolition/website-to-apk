@@ -199,6 +199,10 @@ public class MainActivity extends AppCompatActivity {
         webview.addJavascriptInterface(webAppInterface, "WebToApk");
 
         WebSettings webSettings = webview.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        webSettings.setDomStorageEnabled(true);
+        webSettings.setAllowFileAccessFromFileURLs(true);
+        webSettings.setAllowUniversalAccessFromFileURLs(true);
         webSettings.setJavaScriptEnabled(JSEnabled);
         webSettings.setJavaScriptCanOpenWindowsAutomatically(JSCanOpenWindowsAutomatically);
         webSettings.setGeolocationEnabled(geolocationEnabled);
